@@ -1,5 +1,4 @@
-c = str(input())
-c = list(c)
+c = list(str(input()))
 def sort(c):
     running = True
     pr = False
@@ -25,8 +24,7 @@ def sort(c):
             g += [1]
             e += 1
     return c, g, e
-c1 = sort(c)[0]
-g, e = sort(c)[1], sort(c)[2]
+c1, g, e = sort(c)
 print(sort(c)[0])
 i = 0
 for es in range(e + 1):
